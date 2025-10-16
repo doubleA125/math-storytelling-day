@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Equation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #232323);
+      color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      padding: 40px 20px 100px;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+
+    .story {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff7777;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin: 20px 0;
+      opacity: 0.9;
+    }
+
+    .highlight {
+      color: #ff7777;
+      font-weight: 700;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    audio {
+      display: none; /* hides controls to make it autoplay silently */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="story">
+    <h1>The Last Equation</h1>
+
+    <p>Once, there was a boy named <span class="highlight">Adam</span>, who loved math more than anything. Numbers were his friends — quiet, logical, and fair.</p>
+
+    <p>But his classmates didn’t see it that way. They laughed and called him “Calculator Boy.” Even his teacher often ignored his questions, thinking he was just showing off.</p>
+
+    <p>Then came the national math competition — the day Adam had dreamed of for years. He had practiced every night, whispering formulas to himself like prayers.</p>
+
+    <p>But when he stood on stage and saw hundreds of eyes staring at him, his heart began to race. The timer started ticking. The question appeared on the screen — but the numbers didn’t make sense anymore.</p>
+
+    <p>His pencil slipped from his sweaty hands. His breathing quickened. The once-familiar equations turned blurry, like raindrops on glass. He froze.</p>
+
+    <p>The bell rang. Time was up. Adam hadn’t written a single answer.</p>
+
+    <p>When the results came, his name was at the bottom of the list — <span class="highlight">last place</span>. The same classmates who once mocked him laughed even louder that day.</p>
+
+    <p>That night, Adam sat alone in his room, staring at his notebook. With shaking hands, he wrote one final equation:</p>
+
+    <p><strong>“Dream + Failure = Pain.”</strong></p>
+
+    <p>But then, through tears, he realized something — every equation has another side. He crossed it out and rewrote it:</p>
+
+    <p><strong>“Pain + Effort = Growth.”</strong></p>
+
+    <p>From that moment, Adam didn’t study math to win. He studied because he loved the mystery, the challenge, and the way numbers always gave second chances.</p>
+
+    <p>Months later, he joined another competition — not to prove others wrong, but to prove himself right. He didn’t win first place. He got <span class="highlight">third</span>.</p>
+
+    <p>But this time, he smiled. Because he finally understood the real equation:</p>
+
+    <p><strong>Failure ≠ End<br>Failure = Start</strong></p>
+
+    <footer>© Math Storytelling Day — “Pain + Effort = Growth”</footer>
+  </div>
+
+ 
+
+<script>
+window.addEventListener("load", () => {
+  const music = document.getElementById("bgmusic");
+  music.play();
+
+  // fade in volume
+  setTimeout(() => {
+    music.muted = false;
+    let vol = 0;
+    const fade = setInterval(() => {
+      if (vol < 1) {
+        vol += 0.02;
+        music.volume = vol;
+      } else clearInterval(fade);
+    }, 100);
+  }, 1000);
+});
+</script>
+
+
+</body>
+</html>
