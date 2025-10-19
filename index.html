@@ -1,132 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Last Equation</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost Dog in the Rain</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #232323);
-      color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: center;
-      padding: 40px 20px 100px;
-      overflow-y: auto;
-      scroll-behavior: smooth;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #f2f2f2;
+    background: linear-gradient(180deg, #1a1a1a 0%, #000 100%);
+    overflow-x: hidden;
+  }
 
-    .story {
-      max-width: 800px;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      animation: fadeIn 1.5s ease-in-out;
-    }
+  /* Rain animation overlay */
+  .rain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/9p1vQYB.png');
+    animation: rain 0.5s linear infinite;
+    opacity: 0.25;
+    pointer-events: none;
+  }
 
-    h1 {
-      font-size: 2.5em;
-      color: #ff7777;
-      margin-bottom: 20px;
-    }
+  @keyframes rain {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+  }
 
-    p {
-      font-size: 1.2em;
-      line-height: 1.8;
-      margin: 20px 0;
-      opacity: 0.9;
-    }
+  .container {
+    max-width: 700px;
+    margin: 120px auto;
+    background: rgba(0,0,0,0.6);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.1);
+    text-align: justify;
+    line-height: 1.8;
+    backdrop-filter: blur(4px);
+  }
 
-    .highlight {
-      color: #ff7777;
-      font-weight: 700;
-    }
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #e0e0e0;
+    text-shadow: 0 0 10px #888;
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+  p {
+    margin: 16px 0;
+  }
 
-    footer {
-      text-align: center;
-      width: 100%;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
+  .highlight {
+    color: #a7c7e7;
+    font-weight: 400;
+  }
 
-    audio {
-      display: none; /* hides controls to make it autoplay silently */
-    }
-  </style>
+  footer {
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  .fade {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
 </head>
 <body>
 
-  <div class="story">
-    <h1>The Last Equation</h1>
+<div class="rain"></div>
 
-    <p>Once, there was a boy named <span class="highlight">Adam</span>, who loved math more than anything. Numbers were his friends — quiet, logical, and fair.</p>
+<div class="container fade">
+  <h1>Lost Dog in the Rain</h1>
 
-    <p>But his classmates didn’t see it that way. They laughed and called him “Calculator Boy.” Even his teacher often ignored his questions, thinking he was just showing off.</p>
+  <p><span class="highlight">If you found a dog lost in a playground, what would you do?</span></p>
+  <p>It was raining heavily. Mia and Maria were heading towards their home when they passed by an old playground. Suddenly, they heard a weak whimper coming from the darkness. They looked at each other and said, “We must help him.” Remembering that kindness takes courage, they decided to take him home.</p>
 
-    <p>Then came the national math competition — the day Adam had dreamed of for years. He had practiced every night, whispering formulas to himself like prayers.</p>
+  <p>The dog was covered in mud, trembling from the cold, his eyes full of tears as if begging for help. The rain poured harder, and the ground was filled with puddles reflecting the dim streetlights. “We can’t leave this poor dog here,” Mia whispered. But Maria reminded her of their mother’s words — “No pets allowed.”</p>
 
-    <p>But when he stood on stage and saw hundreds of eyes staring at him, his heart began to race. The timer started ticking. The question appeared on the screen — but the numbers didn’t make sense anymore.</p>
+  <p>Without thinking twice, Mia took off her raincoat and wrapped it around the shivering dog. “We’ll take him home, whatever it costs,” she said firmly. They walked through the rainy streets, trying to keep the little dog warm. When they entered the house, they quietly hid him inside their wardrobe.</p>
 
-    <p>His pencil slipped from his sweaty hands. His breathing quickened. The once-familiar equations turned blurry, like raindrops on glass. He froze.</p>
+  <p>Suddenly — <i>“Woof!”</i> The dog barked loudly. Their mom heard the sound and came rushing to their room. “What was that?” she asked suspiciously. Mia and Maria froze for a moment. Then Mia whispered, “It was just… a random dog in the street.”</p>
 
-    <p>The bell rang. Time was up. Adam hadn’t written a single answer.</p>
+  <hr style="border: 1px solid #444; margin: 30px 0;">
 
-    <p>When the results came, his name was at the bottom of the list — <span class="highlight">last place</span>. The same classmates who once mocked him laughed even louder that day.</p>
+  <p><strong>Conclusion:</strong></p>
+  <p>Their mother didn’t believe them. She walked to the wardrobe and slowly opened the door. The little white dog looked up at her with tired, watery eyes. For a moment, silence filled the room — only the sound of the rain tapping on the windows. The mother sighed deeply. “You girls shouldn’t have brought him here,” she said softly. But when the dog whimpered and rested his head on Mia’s lap, her heart melted. She kneeled down and gently patted his muddy fur. “Alright,” she whispered, “he can stay… just for tonight.”</p>
 
-    <p>That night, Adam sat alone in his room, staring at his notebook. With shaking hands, he wrote one final equation:</p>
+  <p>That night, the rain finally stopped. The dog slept peacefully between the two sisters, finally safe and warm. It was the night when kindness defeated fear — and a home was found in the hearts of those who cared.</p>
+</div>
 
-    <p><strong>“Dream + Failure = Pain.”</strong></p>
-
-    <p>But then, through tears, he realized something — every equation has another side. He crossed it out and rewrote it:</p>
-
-    <p><strong>“Pain + Effort = Growth.”</strong></p>
-
-    <p>From that moment, Adam didn’t study math to win. He studied because he loved the mystery, the challenge, and the way numbers always gave second chances.</p>
-
-    <p>Months later, he joined another competition — not to prove others wrong, but to prove himself right. He didn’t win first place. He got <span class="highlight">third</span>.</p>
-
-    <p>But this time, he smiled. Because he finally understood the real equation:</p>
-
-    <p><strong>Failure ≠ End<br>Failure = Start</strong></p>
-
-    <footer>© Math Storytelling Day — “Pain + Effort = Growth”</footer>
-  </div>
-
- 
-
-<script>
-window.addEventListener("load", () => {
-  const music = document.getElementById("bgmusic");
-  music.play();
-
-  // fade in volume
-  setTimeout(() => {
-    music.muted = false;
-    let vol = 0;
-    const fade = setInterval(() => {
-      if (vol < 1) {
-        vol += 0.02;
-        music.volume = vol;
-      } else clearInterval(fade);
-    }, 100);
-  }, 1000);
-});
-</script>
-
+<footer>© 2025 Sad Story by Mia & Maria</footer>
 
 </body>
 </html>
